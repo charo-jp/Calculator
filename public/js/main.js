@@ -167,6 +167,5 @@ const calc = function(operator, val1, val2){
 const changeTheme = (current, theme,  target) => {
   current.each((index, element) => {
     $(element).addClass(target).removeClass(theme);
-    console.log(element);
   })
 }
