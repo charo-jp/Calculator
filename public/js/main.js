@@ -21,7 +21,7 @@ $("input[name=theme]").click((e) => {
       themeList2 = $(".theme2");
     }
   } else if (themeList3.length === 21){
-    if (target !== "theme1"){
+    if (target !== "theme3"){
       changeTheme(themeList3, "theme3", target);
       themeList3 = $(".theme3");
     }
