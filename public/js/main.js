@@ -11,14 +11,20 @@ $("input[name=theme]").click((e) => {
   let themeList3 = $(".theme3");
   const target = e.target.value;
   if (themeList1.length === 21){
-    changeTheme(themeList1, "theme1", target);
-    themeList1 = $(".theme1");
+    if (target !== "theme1"){
+      changeTheme(themeList1, "theme1", target);
+      themeList1 = $(".theme1");
+    }
   } else if (themeList2.length === 21){
-    changeTheme(themeList2, "theme2", target);
-    themeList2 = $(".theme2");
+    if (target !== "theme2"){
+      changeTheme(themeList2, "theme2", target);
+      themeList2 = $(".theme2");
+    }
   } else if (themeList3.length === 21){
-    changeTheme(themeList3, "theme3", target);
-    themeList3 = $(".theme3");
+    if (target !== "theme1"){
+      changeTheme(themeList3, "theme3", target);
+      themeList3 = $(".theme3");
+    }
   }
 })
 
