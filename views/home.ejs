@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel = "stylesheet" href="./css/main.css">
+  <title>Calculator</title>
+</head>
+<body class = "theme1">
+  <div class="calculator-container">
+    <div class = "header">
+      <h1 class = "calc">calc</h1>
+      <div class="themes">
+        <p class="theme-text">THEME</p>
+        <div class="buttons">
+          <div class="theme-choice">
+            <label for="one" id = "label1">1</label>
+            <input type="radio" name = "theme" id = "one" value = "theme1" checked>
+          </div>
+          <div class="theme-choice">
+            <label for="two" id = "label2">2</label>
+            <input type="radio" name = "theme" id = "two" value = "theme2">
+          </div>
+          <div class="theme-choice">
+            <label for="three" id = "label3">3</label>
+            <input type="radio" name = "theme" id = "three" value = "theme3">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="display theme1">
+      <p class = "display-text" id = "display-text"></p>
+    </div>
+    <div class="panels theme1">
+      <button class="panel theme1" value = "7">7</button>
+      <button class="panel theme1" value = "8">8</button>
+      <button class="panel theme1" value = "9">9</button>
+      <button class="panel text del theme1" value = "delete">DEL</button>
+      <button class="panel theme1" value = "4">4</button>
+      <button class="panel theme1" value = "5">5</button>
+      <button class="panel theme1" value = "6">6</button>
+      <button class="panel theme1" value = "+">+</button>
+      <button class="panel theme1" value = "1">1</button>
+      <button class="panel theme1" value = "2">2</button>
+      <button class="panel theme1" value = "3">3</button>
+      <button class="panel theme1" value = "-">-</button>
+      <button class="panel theme1" value = ".">.</button>
+      <button class="panel theme1" value = "0">0</button>
+      <button class="panel theme1" value = "/">÷</button>
+      <button class="panel theme1" value = "*">×</button>
+      <button class="panel text reset theme1" value = "reset">Clear</button>
+      <button class="panel equal theme1" value = "=">=</button>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src = "js/main.js"></script>
+</body>
+</html>

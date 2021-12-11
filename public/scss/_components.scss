@@ -1,0 +1,130 @@
+// color, border, 
+  body{
+    &.theme1{
+      background: $main-bg;
+      color: $white-text;
+    }
+
+    &.theme2{
+      background: $main-bg2;
+      color: $dark-text2;
+    }
+
+    &.theme3{
+      background: $main-bg3;
+      color: $yellow-text3;
+    }
+  }
+
+  //themes
+  .theme-text, label{
+    font-size: 20px;
+  }
+
+  input{
+    width: 15px;
+    height: 15px;
+  }
+
+  //display
+  .display{
+    border-radius: 10px;
+    &.theme1{
+      background: $screen-bg;
+    }
+
+    &.theme2{
+      background: $screen-bg2;
+    }
+
+    &.theme3{
+      background: $screen-bg3;
+    }
+  }
+
+  // panels
+  .panels{
+    border-radius: 10px;
+    &.theme1{
+    background: $keypad-bg;
+    }
+
+    &.theme2{
+      background: $keypad-bg2;
+    }
+
+    &.theme3{
+      background: $keypad-bg3;
+    }
+  }
+
+  .panel{
+    border-radius: 5px;
+    &.theme1{
+      @include shadow($key-shadow);
+      background: $key-bg;
+      color: $dark-text;
+    }
+
+    &.theme2{
+      @include shadow($key-shadow2);
+      background: $key-bg2;
+      color: $dark-text2;
+    }
+
+    &.theme3{
+      @include shadow($key-shadow3);
+      background: $key-bg3;
+      color: $yellow-text3;
+    }
+  }
+
+  .reset, .del{
+    &.theme1{
+      @include shadow($reset-del-shadow);
+      background: $reset-del-bg;
+      color: $white-text;
+    }
+
+    &.theme2{
+      @include shadow($reset-del-shadow2);
+      background: $reset-del-bg2;
+      color: $white-text;
+    }
+
+    &.theme3{
+      @include shadow($reset-del-shadow3);
+      background: $reset-del-bg3;
+      color: $white-text;
+    }
+  }
+  
+  .equal{
+    &.theme1{
+      @include shadow($equal-shadow);
+      background: $equal-bg;
+      color: $white-text;
+    }
+
+    &.theme2{
+      @include shadow($equal-shadow2);
+      background: $equal-bg2;
+      color: $white-text;
+    }
+
+    &.theme3{
+      @include shadow($equal-shadow3);
+      background: $equal-bg3;
+      color: $white-text;
+    }
+  }
+
+  .panel:active{
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+  }
+
+  .text{
+    font-size: 20px;
+  }
