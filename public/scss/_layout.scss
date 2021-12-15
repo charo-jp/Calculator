@@ -1,11 +1,15 @@
 body{
   width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .calculator-container{
-  width: 80%;
-  height: 100%;
+  width: 85%;
+  height: auto;
   max-width: 800px;
 }
 
@@ -15,6 +19,11 @@ body{
   justify-content: space-between;
   align-items: center;
   height: 40px;
+}
+
+input{
+  width: 15px;
+  height: 15px;
 }
 
 //themes

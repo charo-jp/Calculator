@@ -58,7 +58,7 @@ $("button").click(function() {
         $("#display-text").css("font-size", "32px");
       }
     } else {
-      formula = "Wrong Input. Press Clear to restart";
+      formula = "";
       displayText.innerHTML = formula;
     }
 
